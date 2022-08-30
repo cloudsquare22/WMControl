@@ -11,6 +11,8 @@
 		8DFAA30928BB55EB00E5BC70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAA30828BB55EB00E5BC70 /* ContentView.swift */; };
 		8DFAA30B28BB55EC00E5BC70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFAA30A28BB55EC00E5BC70 /* Assets.xcassets */; };
 		8DFAA30E28BB55EC00E5BC70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFAA30D28BB55EC00E5BC70 /* Preview Assets.xcassets */; };
+		8DFAA31528BE2C9500E5BC70 /* WMControlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAA31428BE2C9500E5BC70 /* WMControlModel.swift */; };
+		8DFAA31728BE310200E5BC70 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFAA31628BE310200E5BC70 /* BluetoothService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8DFAA30828BB55EB00E5BC70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DFAA30A28BB55EC00E5BC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DFAA30D28BB55EC00E5BC70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8DFAA31428BE2C9500E5BC70 /* WMControlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMControlModel.swift; sourceTree = "<group>"; };
+		8DFAA31628BE310200E5BC70 /* BluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				8DFAA30828BB55EB00E5BC70 /* ContentView.swift */,
 				8DFAA30A28BB55EC00E5BC70 /* Assets.xcassets */,
 				8DFAA30C28BB55EC00E5BC70 /* Preview Content */,
+				8DFAA31428BE2C9500E5BC70 /* WMControlModel.swift */,
+				8DFAA31628BE310200E5BC70 /* BluetoothService.swift */,
 			);
 			path = WMControl;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFAA31728BE310200E5BC70 /* BluetoothService.swift in Sources */,
 				8DFAA30928BB55EB00E5BC70 /* ContentView.swift in Sources */,
 				8DFAA30728BB55EB00E5BC70 /* WMControlApp.swift in Sources */,
+				8DFAA31528BE2C9500E5BC70 /* WMControlModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 				DEVELOPMENT_TEAM = 385NJ9XLA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "WM Control";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +308,7 @@
 				DEVELOPMENT_TEAM = 385NJ9XLA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "WM Control";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
