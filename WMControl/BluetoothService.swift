@@ -12,18 +12,18 @@ class BluetoothService: NSObject {
     var peripheralManager: CBPeripheralManager! = nil
     
     func start() {
-        self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil)
+        self.peripheralManager = CBPeripheralManager(delegate: self, queue: nil, options: nil)
     }
     
     func startAdvertising() {
-        let serviceUUIDs = [CBUUID(string: "0000")]
-        let advertisementData: Dictionary = [CBAdvertisementDataLocalNameKey: "Test Device",
+        let serviceUUIDs = [CBUUID(string: "0000110E-0000-1000-8000-00805F9B34FB")]
+        let advertisementData: Dictionary = [CBAdvertisementDataLocalNameKey: "WMControl",
                                           CBAdvertisementDataServiceUUIDsKey: serviceUUIDs] as [String : Any]
         self.peripheralManager.startAdvertising(advertisementData)
     }
     
     func startService() {
-        let serviceUUID = CBUUID(string: "0000")
+        let serviceUUID = CBUUID(string: "0000110E-0000-1000-8000-00805F9B34FB")
         let service = CBMutableService(type: serviceUUID, primary: true)
 
         // キャラクタリスティックを作成
